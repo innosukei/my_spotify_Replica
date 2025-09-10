@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:backgroundTint="#121212"
+    android:gravity="center|start"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/categories_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/profile_mini"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/pfp" />
+
+        <Button
+            android:id="@+id/all_button"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#45A956"
+            android:text="All"
+            android:textColor="#F6F2F2"
+            android:textColorHighlight="#F8F7F7"
+            android:textColorHint="#F2EFEF"
+            android:textColorLink="#FFFFFF"></Button>
+
+        <Button
+            android:id="@+id/music_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#333333"
+            android:text="Music"
+            android:textColor="#F6F2F2"
+            android:textColorHighlight="#F8F7F7"
+            android:textColorHint="#F2EFEF"
+            android:textColorLink="#FFFFFF"></Button>
+
+        <Button
+            android:id="@+id/podcasts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#333333"
+            android:text="Podcasts"
+            android:textColor="#F6F2F2"
+            android:textColorHighlight="#F8F7F7"
+            android:textColorHint="#F2EFEF"
+            android:textColorLink="#FFFFFF"></Button>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/your_recents_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/click_me"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/border_radius_10px"
+                        android:backgroundTint="#333333"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/border_radius_10px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:backgroundTint="#2F2F2F"
+                            android:paddingEnd="40dp"
+                            android:text="yes im high"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FDFDFD"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/border_radius_10px"
+                        android:backgroundTint="#333333"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/border_radius_10px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:backgroundTint="#2F2F2F"
+                            android:paddingEnd="40dp"
+                            android:text="fantastic'a le ballroom"
+                            android:textAlignment="textStart"
+                            android:textColor="#FDFDFD"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/border_radius_10px"
+                        android:backgroundTint="#333333"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/border_radius_10px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:backgroundTint="#2F2F2F"
+                            android:paddingEnd="40dp"
+                            android:text="crack*"
+                            android:textAlignment="textStart"
+                            android:textColor="#FDFDFD"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="@drawable/border_radius_10px"
+                        android:backgroundTint="#333333"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/border_radius_10px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:backgroundTint="#2F2F2F"
+                            android:paddingEnd="40dp"
+                            android:text="bbno$"
+                            android:textAlignment="textStart"
+                            android:textColor="#FDFDFD"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/border_radius_10px"
+                        android:backgroundTint="#333333"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/imageView72"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/border_radius_10px" />
+
+                        <TextView
+                            android:id="@+id/textView223"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:backgroundTint="#2F2F2F"
+                            android:paddingEnd="40dp"
+                            android:text="NewJeans"
+                            android:textAlignment="textStart"
+                            android:textColor="#FDFDFD"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/border_radius_10px"
+                        android:backgroundTint="#333333"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/imageView75"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/border_radius_10px" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:backgroundTint="#2F2F2F"
+                            android:paddingEnd="40dp"
+                            android:text="22.06.23"
+                            android:textAlignment="textStart"
+                            android:textColor="#FDFDFD"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/border_radius_10px"
+                        android:backgroundTint="#333333"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/imageView721"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/border_radius_10px" />
+
+                        <TextView
+                            android:id="@+id/textView275"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:backgroundTint="#2F2F2F"
+                            android:paddingEnd="40dp"
+                            android:text="peak"
+                            android:textAlignment="textStart"
+                            android:textColor="#FDFDFD"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="@drawable/border_radius_10px"
+                        android:backgroundTint="#333333"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/imageView70"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="0"
+                            app:srcCompat="@drawable/border_radius_10px" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:backgroundTint="#2F2F2F"
+                            android:paddingEnd="40dp"
+                            android:text="K-pop Mix"
+                            android:textAlignment="textStart"
+                            android:textColor="#FDFDFD"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/your_tm_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="5dp"
+                    android:text="Your top mixes"
+                    android:textColor="#F6F6F6"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_marginBottom="8dp"
+                                app:srcCompat="@drawable/border_radius_10px" />
+
+                            <TextView
+                                android:layout_width="128dp"
+                                android:layout_height="wrap_content"
+                                android:text="Artic Monkeys, The Neighbourhood, SZA"
+                                android:textAlignment="textStart"
+                                android:textColor="#767676" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_marginBottom="8dp"
+                                app:srcCompat="@drawable/border_radius_10px" />
+
+                            <TextView
+                                android:layout_width="131dp"
+                                android:layout_height="wrap_content"
+                                android:text="Artic Monkeys, The Neighbourhood, SZA"
+                                android:textAlignment="textStart"
+                                android:textColor="#767676" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_marginBottom="8dp"
+                                app:srcCompat="@drawable/border_radius_10px" />
+
+                            <TextView
+                                android:layout_width="127dp"
+                                android:layout_height="wrap_content"
+                                android:text="Sabrina Carpenter, starfall, and more.."
+                                android:textAlignment="textStart"
+                                android:textColor="#767676" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_marginBottom="8dp"
+                                app:srcCompat="@drawable/border_radius_10px" />
+
+                            <TextView
+                                android:layout_width="131dp"
+                                android:layout_height="wrap_content"
+                                android:text="Artic Monkeys, The Neighbourhood, SZA"
+                                android:textAlignment="textStart"
+                                android:textColor="#767676" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="2dp"
+                    android:text="Made for cumii."
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_marginBottom="8dp"
+                                app:srcCompat="@drawable/border_radius_10px" />
+
+                            <TextView
+                                android:layout_width="131dp"
+                                android:layout_height="wrap_content"
+                                android:text="SEVENTEEN, EXO, BIGBANG, etc..."
+                                android:textAlignment="textStart"
+                                android:textColor="#767676" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_marginBottom="8dp"
+                                app:srcCompat="@drawable/border_radius_10px" />
+
+                            <TextView
+                                android:layout_width="127dp"
+                                android:layout_height="wrap_content"
+                                android:text="Skibidi8172, RobloxKid, Capt.."
+                                android:textAlignment="textStart"
+                                android:textColor="#767676" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_marginBottom="8dp"
+                                app:srcCompat="@drawable/border_radius_10px" />
+
+                            <TextView
+                                android:layout_width="127dp"
+                                android:layout_height="wrap_content"
+                                android:text="Skibidi8172, RobloxKid, Capt.."
+                                android:textAlignment="textStart"
+                                android:textColor="#767676" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_marginBottom="8dp"
+                                app:srcCompat="@drawable/border_radius_10px" />
+
+                            <TextView
+                                android:layout_width="131dp"
+                                android:layout_height="wrap_content"
+                                android:text="SEVENTEEN, EXO, BIGBANG, etc..."
+                                android:textAlignment="textStart"
+                                android:textColor="#767676" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/nav_bar"
+       />
+
+</LinearLayout>
